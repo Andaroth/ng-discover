@@ -1,0 +1,2 @@
+# ng-discover
+Practicing Angular
