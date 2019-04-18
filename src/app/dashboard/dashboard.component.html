@@ -1,0 +1,17 @@
+<h2>Previsions</h2>
+<div *ngIf="previsions">
+  <div *ngFor="let prev of previsions">
+    <div class="prevision-card">
+      <h3>{{prev.location}}</h3>
+      <em>{{prev.temp}} °C</em>
+      <p>{{prev.weather}}</p>
+    </div>
+</div>
+  <div *ngIf="!previsions">
+    <div class="prevision-card">
+      <h3>?</h3>
+      <em>N/A</em>
+      <p>No previsions !</p>
+    </div>
+  </div>
+</div>
